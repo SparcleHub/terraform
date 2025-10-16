@@ -12,8 +12,8 @@ resource "yandex_compute_instance" "vm" {
   allow_stopping_for_update = true
 
   resources {
-    cores  = 4
-    memory = 4
+    cores  = var.cores
+    memory = var.memory
   }
 
   boot_disk {
